@@ -1,0 +1,31 @@
+# @sk-aitech/design-system — Cursor Rules
+
+## 필수 규칙
+
+1. UI 구현 시 반드시 이 디자인 시스템의 컴포넌트를 사용
+2. 새 UI 컴포넌트를 프로젝트에 임의로 만들지 말 것
+3. 색상은 테마 CSS 변수 사용 (bg-primary, text-primary 등), 하드코딩 금지
+4. 간격은 Tailwind spacing scale만 사용
+5. 아이콘은 lucide-react만 사용
+6. className 병합 시 cn() 유틸리티 사용
+
+## 사용 가능 컴포넌트
+
+Button, Input, Textarea, Label, Card, Badge, StatusBadge, Alert, Progress, UsageBar, Dialog, Select, Table, Tabs, Switch
+
+## 테마
+
+- Latte: import '@sk-aitech/design-system/themes/latte.css' (Purple)
+- ACE: import '@sk-aitech/design-system/themes/ace.css' (Blue)
+
+## 스타일 패턴
+
+- 카드: Card 컴포넌트 사용 (bg-white rounded-2xl border border-gray-100 shadow-sm)
+- 그라데이션: from-[var(--gradient-from)] to-[var(--gradient-to)]
+- 터미널: bg-[#1e293b] + font-mono
+- 상태: StatusBadge 컴포넌트 사용
+
+## 기술 스택
+
+React 18/19, TypeScript, Tailwind CSS v4, CVA + clsx + tailwind-merge, lucide-react
+Font: Plus Jakarta Sans (UI), JetBrains Mono (code)

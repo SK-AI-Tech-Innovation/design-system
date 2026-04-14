@@ -1,0 +1,23 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "name": "ace",
+  "description": "ACE - Blue theme for AI Code Evaluation Platform",
+  "primary": {
+    "DEFAULT":    { "$value": "#00b7ff", "$type": "color" },
+    "foreground": { "$value": "#ffffff", "$type": "color" },
+    "50":  { "$value": "#eff6ff", "$type": "color" },
+    "100": { "$value": "#dbeafe", "$type": "color" },
+    "200": { "$value": "#bfdbfe", "$type": "color" },
+    "300": { "$value": "#93c5fd", "$type": "color" },
+    "400": { "$value": "#60a5fa", "$type": "color" },
+    "500": { "$value": "#00b7ff", "$type": "color" },
+    "600": { "$value": "#0066e6", "$type": "color" },
+    "700": { "$value": "#0050cc", "$type": "color" },
+    "800": { "$value": "#0033b3", "$type": "color" },
+    "900": { "$value": "#0000ff", "$type": "color" }
+  },
+  "gradient": {
+    "from": { "$value": "#0066e6", "$type": "color" },
+    "to":   { "$value": "#00b7ff", "$type": "color" }
+  }
+}

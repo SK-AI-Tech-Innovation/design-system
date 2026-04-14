@@ -1,0 +1,42 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "gray": {
+    "50":  { "$value": "#fafafa", "$type": "color" },
+    "100": { "$value": "#f5f5f5", "$type": "color" },
+    "200": { "$value": "#e5e5e5", "$type": "color" },
+    "300": { "$value": "#d4d4d4", "$type": "color" },
+    "400": { "$value": "#a3a3a3", "$type": "color" },
+    "500": { "$value": "#737373", "$type": "color" },
+    "600": { "$value": "#525252", "$type": "color" },
+    "700": { "$value": "#404040", "$type": "color" },
+    "800": { "$value": "#262626", "$type": "color" },
+    "900": { "$value": "#171717", "$type": "color" }
+  },
+  "semantic": {
+    "background":            { "$value": "#fafafa", "$type": "color" },
+    "foreground":            { "$value": "#1f2937", "$type": "color" },
+    "card":                  { "$value": "#ffffff", "$type": "color" },
+    "card-foreground":       { "$value": "#1f2937", "$type": "color" },
+    "secondary":             { "$value": "#f9fafb", "$type": "color" },
+    "secondary-foreground":  { "$value": "#1f2937", "$type": "color" },
+    "muted":                 { "$value": "#f3f4f6", "$type": "color" },
+    "muted-foreground":      { "$value": "#6b7280", "$type": "color" },
+    "accent":                { "$value": "#f3f4f6", "$type": "color" },
+    "accent-foreground":     { "$value": "#1f2937", "$type": "color" },
+    "destructive":           { "$value": "#ef4444", "$type": "color" },
+    "destructive-foreground": { "$value": "#ffffff", "$type": "color" },
+    "border":                { "$value": "#e5e7eb", "$type": "color" },
+    "input":                 { "$value": "#e5e7eb", "$type": "color" }
+  },
+  "radius": {
+    "sm":  { "$value": "0.375rem", "$type": "dimension" },
+    "md":  { "$value": "0.5rem",   "$type": "dimension" },
+    "lg":  { "$value": "0.75rem",  "$type": "dimension" },
+    "xl":  { "$value": "1rem",     "$type": "dimension" },
+    "2xl": { "$value": "1.5rem",   "$type": "dimension" }
+  },
+  "font": {
+    "sans": { "$value": "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif", "$type": "fontFamily" },
+    "mono": { "$value": "'JetBrains Mono', monospace", "$type": "fontFamily" }
+  }
+}

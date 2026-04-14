@@ -1,0 +1,93 @@
+@import "../base.css";
+
+@theme {
+  --color-primary: #00b7ff;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #00b7ff;
+
+  /* Blue scale - ACE 원본 그대로 */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #00b7ff;
+  --color-blue-600: #0066e6;
+  --color-blue-700: #0050cc;
+  --color-blue-800: #0033b3;
+  --color-blue-900: #0000ff;
+
+  /* Primary alias (= blue) */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #00b7ff;
+  --color-primary-600: #0066e6;
+  --color-primary-700: #0050cc;
+  --color-primary-800: #0033b3;
+  --color-primary-900: #0000ff;
+}
+
+:root {
+  --gradient-from: #0066e6;
+  --gradient-to: #00b7ff;
+  --gradient-shadow: rgba(0, 102, 230, 0.3);
+  --gradient-shadow-light: rgba(0, 102, 230, 0.15);
+  --gradient-shadow-soft: rgba(0, 102, 230, 0.08);
+}
+
+/* Ambient background glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-blue-900) 15%, transparent) 0%, transparent 70%);
+  filter: blur(150px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0066e6 0%, #0050cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom split slider */
+.split-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #00b7ff 0%, #00b7ff var(--val, 80%), #bfdbfe var(--val, 80%), #bfdbfe 100%);
+  outline: none;
+  cursor: pointer;
+}
+.split-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: white; border: 3px solid #00b7ff;
+  box-shadow: 0 2px 6px rgba(0, 102, 230, 0.3);
+  cursor: grab;
+}
+.split-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 3px 10px rgba(0, 102, 230, 0.45);
+  transform: scale(1.1);
+}
+.split-slider::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.15); }
+.split-slider::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: white; border: 3px solid #00b7ff;
+  box-shadow: 0 2px 6px rgba(0, 102, 230, 0.3);
+  cursor: grab;
+}
+.split-slider::-moz-range-track { height: 12px; border-radius: 6px; background: #bfdbfe; }
+.split-slider::-moz-range-progress { height: 12px; border-radius: 6px; background: #00b7ff; }

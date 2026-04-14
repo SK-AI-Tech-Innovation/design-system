@@ -1,0 +1,23 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "name": "latte",
+  "description": "LATTE - Purple theme for LLM Fine-Tuning Platform",
+  "primary": {
+    "DEFAULT":    { "$value": "#B07FF6", "$type": "color" },
+    "foreground": { "$value": "#ffffff", "$type": "color" },
+    "50":  { "$value": "#faf5ff", "$type": "color" },
+    "100": { "$value": "#f3e8ff", "$type": "color" },
+    "200": { "$value": "#e9d5ff", "$type": "color" },
+    "300": { "$value": "#d8b4fe", "$type": "color" },
+    "400": { "$value": "#c9a3ff", "$type": "color" },
+    "500": { "$value": "#B07FF6", "$type": "color" },
+    "600": { "$value": "#9f6ce8", "$type": "color" },
+    "700": { "$value": "#8e59da", "$type": "color" },
+    "800": { "$value": "#7d46cc", "$type": "color" },
+    "900": { "$value": "#6c33be", "$type": "color" }
+  },
+  "gradient": {
+    "from": { "$value": "#8B5CF6", "$type": "color" },
+    "to":   { "$value": "#B07FF6", "$type": "color" }
+  }
+}
