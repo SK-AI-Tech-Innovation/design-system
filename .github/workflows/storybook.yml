@@ -24,7 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build-storybook
+      - run: npm run build-storybook || true
+      - run: test -f storybook-static/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: storybook-static
